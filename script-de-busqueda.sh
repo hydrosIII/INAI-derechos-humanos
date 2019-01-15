@@ -1,8 +1,8 @@
 ### queries extra
 cat sol-2003-2018.csv | grep -i "desaparición" | grep -i "forzada" >> solicitudes-ddhh-independiente.csv 
 cat sol-2003-2018.csv | grep -i "desaparicion" | grep -i "forzada" >> solicitudes-ddhh-independiente.csv 
-cat sol-2003-2018.csv | grep -i "genocidio" >> filtrado.csv 
-cat sol-2003-2018.csv | grep -i "lesa humanidad" >> filtrado.csv 
+cat sol-2003-2018.csv | grep -i "genocidio" >> solicitudes-ddhh-independiente.csv
+cat sol-2003-2018.csv | grep -i "lesa humanidad" >> solicitudes-ddhh-independiente.csv
 
 ####
 cat sol-2003-2018.csv  | grep -i "Acteal" >> solicitudes-ddhh-independiente.csv 
