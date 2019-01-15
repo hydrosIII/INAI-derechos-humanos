@@ -3,7 +3,7 @@
 El proposito de este repositorio es proveer de los scripts para realizar una 
 búsqueda independiente en la base de datos del INAI de acceso a la 
 información. Esta búsqueda usa una búsqueda simple por palabras, enfocada a 
-13 casos de violaciones graves de derechos humanos. 
+15 casos de violaciones graves de derechos humanos. 
 
 
 * Acteal
