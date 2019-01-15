@@ -6,21 +6,21 @@ información. Esta búsqueda usa una búsqueda simple por palabras, enfocada a
 13 casos de violaciones graves de derechos humanos. 
 
 
-..*Acteal
-..*Aguas Blancas
-..*Atenco
-..*Apatzingán
-..*Ayotzinapa 2011
-..*Ayotzinapa 2014
-..*Cadereyta
-..*Campo algodonero
-..*Guardería ABC
-..*Guerra Sucia
-..*El Halconazo
-..*San Fernando 2010
-..*San Fernando 2011
-..*Tlatelolco
-..*Tlataya
+* Acteal
+* Aguas Blancas
+* Atenco
+* Apatzingán
+* Ayotzinapa 2011
+* Ayotzinapa 2014
+* Cadereyta
+* Campo algodonero
+* Guardería ABC
+* Guerra Sucia
+* El Halconazo
+* San Fernando 2010
+* San Fernando 2011
+* Tlatelolco
+* Tlataya
 
 Estos scripts fueron realizados para ser lo más sencillo posibles.  
 Necesitando solo algunos programas que se pueden conseguir en un sistema 
