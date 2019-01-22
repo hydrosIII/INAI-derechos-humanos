@@ -34,7 +34,7 @@ rm *.xls
 ls | grep -v utf8 | xargs "rm"
 ## unificar todos los ficheros. 
 
-cat  solicitudes2003.csv > solicitudes-2003-2018.csv
+cat  solicitudes2003utf8.csv > solicitudes-2003-2018.csv
 tail -n +2 solicitudes2004utf8.csv >> solicitudes-2003-2018.csv
 tail -n +2 solicitudes2005utf8.csv >> solicitudes-2003-2018.csv
 tail -n +2 solicitudes2006utf8.csv >> solicitudes-2003-2018.csv
