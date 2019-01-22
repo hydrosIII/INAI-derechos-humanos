@@ -11,6 +11,12 @@ iconv -f ISO-8859-1 -t UTF8 solicitudes2005.csv -o solicitudes2005utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2006.csv -o solicitudes2006utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2007.csv -o solicitudes2007utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2008.csv -o solicitudes2008utf8.csv
+#### El archivo del 2009 bajado en enero del 2009 de infomex es inválido y 
+#### no sirve. Por lo que este repositorio provee un archivo anterior de 
+#### noviembre del 2018 que es válido y es el que se usa en la construcción 
+#### del archivo unificado. Si se quiere usar el original bajado, se puede borrar la 
+#### línea de abajo.
+cp ../solicitudes2009/solicitudes2009.csv .
 iconv -f ISO-8859-1 -t UTF8 solicitudes2009.csv -o solicitudes2009utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2010.csv -o solicitudes2010utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2011.csv -o solicitudes2011utf8.csv
