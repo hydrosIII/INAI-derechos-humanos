@@ -36,3 +36,7 @@ Un programa que realiza la búsqueda de solicitudes por palabra clave.
 Y el ultimo programa que ordena la anterior búsqueda por un criterio de 
 relevancia tomando en cuenta el número de terminos encontrados.
 
+El resultado del primer programa (bajar-base-inai.sh), es un archivo de csv ( Comma separated values) que se puede abrir en excel, con la totalidad de las solicitudes del INAI del 2003 al 2018.
+El resultado del segundo programa, es un archivos csv, que se puede abrir en excel, con todas las solicitudes conteniendo las palabras clave. 
+El reultado del tercer script es un archivo csv, que se puede abrir en excel, con las solicitudes que mencionan más de un término de búsqueda, además de cuantos términos de búsqueda aparecieron por solicitud, en la primera columna, junto con el folio.
+
