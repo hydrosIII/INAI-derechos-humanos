@@ -1,7 +1,9 @@
-wget http://www.infomex.org.mx/gobiernofederal/HomeOpenDataServlet?opcion=Todos.CSV -O  todas-las-solicitudes-de-acceso-a-ala-informacion-2003-2018.zip
+#wget 
+#http://www.infomex.org.mx/gobiernofederal/HomeOpenDataServlet?opcion=Todos.CSV 
+#-O  todas-las-solicitudes-de-acceso-a-ala-informacion-2003-2018.zip
 
-unzip todas-las-solicitudes-de-acceso-a-ala-informacion-2003-2018.zip
-## convert to utf8 
+#unzip todas-las-solicitudes-de-acceso-a-ala-informacion-2003-2018.zip
+##convert to utf8 
 
 cd csv
 #convert
@@ -26,12 +28,12 @@ iconv -f ISO-8859-1 -t UTF8 solicitudes2014.csv -o solicitudes2014utf8.csv
 iconv -f ISO-8859-1 -t UTF8 solicitudes2015.csv -o solicitudes2015utf8.csv
 ####
 iconv -f ISO-8859-1 -t UTF8 Solicitudes2016.csv -o solicitudes2016utf8.csv
-iconv -f ISO-8859-1 -t UTF8 Solicitudes2017.csv -o solicitudes2017utf8.csv
-iconv -f ISO-8859-1 -t UTF8 Solicitudes2018.csv -o solicitudes2018utf8.csv
+### solicitudes 2017 y 2018 ya tienen utf8
+
 
 ### limpiar los archivos que no se van a usar
 rm *.xls
-ls | grep -v utf8 | xargs "rm"
+ls | grep -v utf8 | grep -v 2018 | grep -v 2017 | xargs "rm"
 ## unificar todos los ficheros. 
 
 cat  solicitudes2003utf8.csv > solicitudes-2003-2018.csv
@@ -48,7 +50,8 @@ tail -n +2 solicitudes2013utf8.csv >> solicitudes-2003-2018.csv
 tail -n +2 solicitudes2014utf8.csv >> solicitudes-2003-2018.csv
 tail -n +2 solicitudes2015utf8.csv >> solicitudes-2003-2018.csv
 tail -n +2 solicitudes2016utf8.csv >> solicitudes-2003-2018.csv
-tail -n +2 solicitudes2017utf8.csv >> solicitudes-2003-2018.csv
-tail -n +2 solicitudes2018utf8.csv >> solicitudes-2003-2018.csv
+### ya son utf8
+tail -n +2 Solicitudes2017.csv >> solicitudes-2003-2018.csv
+tail -n +2 Solicitudes2018.csv >> solicitudes-2003-2018.csv
 
 cp solicitudes-2003-2018.csv ..
